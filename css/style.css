@@ -1,0 +1,65 @@
+:root{
+    --main-color: #006CB7;
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg-main{
+    background-color: var(--main-color);
+}
+
+.text-main{
+    color: var(--main-color);
+}
+
+
+
+.main-nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-item h1{
+    position: absolute;
+    font-size: 64px;
+}
+
+.carousel-item h2{
+    position: absolute;
+    font-size: 55px;
+    color: rgb(255, 133, 154);
+}
+
+.carousel-item.num1 h1{
+    top: 40%;
+    left: 40%;
+    transform: translate(0, -50%);
+}
+
+.carousel-item.num1 h2{
+    top: 55%;
+    left: 40%;
+    transform: translate(0, -50%);
+}
+
+.carousel-item.num2 h1{
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, 0);
+}
+
+.carousel-item.num2 h2{
+    top: 55%;
+    left: 33%;
+    transform: translate(-50%, 0);
+}
