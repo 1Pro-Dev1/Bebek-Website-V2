@@ -178,3 +178,30 @@
     max-width: 400px;
     margin: auto;
 } */
+
+.offer{
+    padding: 50px 0;
+}
+
+.offer form{
+    width: 70%;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.offer input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px rgb(197, 197, 197) solid;
+    padding: 10px;
+    font-size: 20px;
+    flex: 1;
+}
+
+.offer input::placeholder{
+    color: rgb(197, 197, 197);
+}
+
+.offer input:focus{
+    outline: none;
+}
