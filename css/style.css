@@ -149,7 +149,8 @@
     box-shadow: 0 0 10px #7e7e7e23;
 }
 
-.products i{
+.products i,
+.product-page i{
     color: gold;
 }
 
@@ -217,4 +218,8 @@ footer ul{
 
 footer ul li{
     margin: 0;
+}
+
+.products a{
+    text-decoration: none;
 }
