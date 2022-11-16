@@ -223,3 +223,38 @@ footer ul li{
 .products a{
     text-decoration: none;
 }
+
+.alert{
+    top: 100px;
+    width: 95%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+
+.checkout .products{
+    border: 1px solid rgba(119, 119, 119, 0.356);
+    border-radius: 10px;
+    box-shadow: rgb(119 119 119 / 36%) 2px 2px 3px;
+    padding: 20px;
+}
+
+.checkout{
+    padding: 20px 0 20px;
+
+}
+
+.checkout .card-body{
+    height: 100%;
+}
+
+.checkout img{
+    width: 200px;
+}
+
+.checkout .col-md-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
