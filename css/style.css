@@ -89,6 +89,7 @@
 .feutures{
     padding: 30px 0;
     background-color: #f7f7f7;
+    overflow: hidden;
 }
 .feutures .text{
     justify-content: center;
@@ -98,6 +99,8 @@
 .bundels{
     padding: 50px;
     background-color: var(--main-color);
+    overflow: hidden;
+
 }
 
 .heading::after{
@@ -257,4 +260,34 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bundels .card{
+    transition: 1s;
+}
+
+.bundels .card:hover{
+    transform: scale(2);
+}
+
+.products .img-con{
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.products .img-con:hover::before{
+    left: 0;
+}
+
+.products .img-con::before{
+    content: "";
+    background-image: url("../imgs/product3.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
 }
