@@ -26,7 +26,13 @@
     background-image: url("../imgs/svg1.svg");
 }
 
+.layer2{
+    background-image: url("../imgs/svg2.svg");
+}
 
+.layer3{
+    background-image: url("../imgs/svg3.svg");
+}
 
 .main-nav .container{
     display: flex;
@@ -307,4 +313,8 @@ a{
 
 .products .col-lg-3{
     box-shadow: 0 0 0 black;
+}
+
+.no2{
+    padding: 0px;
 }
