@@ -242,7 +242,8 @@ a{
     text-decoration: none;
 }
 
-.checkout .products{
+.checkout .products,
+.checkout .data-check{
     border: 1px solid rgba(119, 119, 119, 0.356);
     border-radius: 10px;
     box-shadow: rgb(119 119 119 / 36%) 2px 2px 3px;
@@ -317,4 +318,23 @@ a{
 
 .no2{
     padding: 0px;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-check .payment span{
+    border-radius: 10px;
+    border: 1px solid #777;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.data-check .payment .active{
+    border: 3px solid var(--main-color);
+
 }
