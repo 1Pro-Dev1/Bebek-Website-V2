@@ -55,34 +55,61 @@
                 <div class="products">
                     <h1 class="text-center text-black-50 empty-cart">Shopping Cart is empty</h1>
                 </div>
-                <h1 class="text-black-50 text-center mt-5 purchase"  style="display: none;">All items has been purchased</h1>
                 <div class="d-flex align-items-center justify-content-center mt-5 button-cont">
                     <a class="btn btn-primary" role="button">Checkout</a>
                 </div>
-                <!-- <div class="data-check">
+                <div class="data-check" style="display: none;">
                     <div class="input-group mb-4">
                         <span class="input-group-text" id="inputGroup-sizing-default">First name</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="text" class="form-control first-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         <span class="input-group-text" id="inputGroup-sizing-default">Last name</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="text" class="form-control last-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="text" class="form-control address-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
-                        <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="email" class="form-control email-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
-                    <div class="payment d-flex justify-content-center align-items-center">
-                        <span class="" data-kind="cash"><i class="fa-solid fa-money-bill-wave fa-2x text-main p-2"></i></span>
-                        <span class="ms-3" data-kind="card"><i class="fa-regular fa-credit-card fa-2x text-main p-2"></i></span>
+                    <div class="payment d-flex justify-content-center align-items-center gap-3">
+                        <span class="p-2 active" data-kind="cash"><i class="fa-solid fa-money-bill-wave fa-2x text-main"></i></span>
+                        <span class="p-2" data-kind="card"><i class="fa-regular fa-credit-card fa-2x text-main"></i></span>
                     </div>
                     <div class="d-flex align-items-center justify-content-center mt-3 button-check">
                         <a class="btn btn-primary" role="button">Checkout</a>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
+        <div class="receipt mt-5" style="display: none;">
+            <div class="container">
+                <div class="receipt-content  p-5">
+                    <h1 class="text-center">Receipt</h1>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Full Name: <span class="full-name text-main"></span></h3>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Address: <span class="address text-main"></span></h3>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>E-mail: <span class="email text-main"></span></h3>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Payment Type: <span class="payment-type text-main"></span></h3>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Total: <span class="total-price text-main"></span></h3>
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Receipt num: <span class="receipt-num text-main"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>

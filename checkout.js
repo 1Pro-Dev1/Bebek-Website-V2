@@ -1,6 +1,5 @@
 let emptyCart = document.querySelector(".empty-cart")
 let checkoutbtn = document.querySelector(".button-cont a")
-let purchase = document.querySelector(".purchase")
 
 if (localStorage.getItem("products") == null){
     checkoutbtn.style.display = "none"
@@ -112,29 +111,85 @@ if (localStorage.getItem("products") == null){
 
 checkoutbtn.addEventListener("click", () =>{
     productsContainer.remove()
-    purchase.style.display = "block"
     checkoutbtn.style.display = "none"
-    localStorage.clear()
+    document.querySelector(".data-check").style.display = "block"
 })
 
 // Payment choose //
 
 
-// let paymentBox = document.querySelector(".checkout .payment");
-// let paymentBtns = document.querySelectorAll(".checkout .payment span");
-// console.log(paymentBtns)
-// paymentBtns[0 || 1].addEventListener("click", (e) =>{
-//     if (paymentType == null || paymentType == undefined || paymentType == ""){
-//         paymentType = e.target.getAttribute("data-kind");
-//     } else {
-//         var paymentType = e.target.getAttribute("data-kind");
-//     }
-//     for (let i = 0; i < paymentBtns.length; i++) {
-//         const ele = paymentBtns[i];
-//         if (ele.classList.contains("active")){
-//             ele.classList.remove("active");
-//         }
-//     }
-//     console.log(e.target)
-//     e.target.classList.add("active");
-// })
+let paymentBox = document.querySelector(".checkout .payment");
+let paymentBtns = document.querySelectorAll(".checkout .payment span");
+var paymentType;
+
+for (let i = 0; i < paymentBtns.length; i++) {
+    const element = paymentBtns[i];
+    element.addEventListener("click", (e) =>{
+        if (paymentType == null || paymentType == undefined || paymentType == ""){
+            paymentType = e.target.getAttribute("data-kind");
+            console.log(paymentType)
+        } else {
+            paymentType = e.target.getAttribute("data-kind");
+            console.log(paymentType)
+        }
+        for (let i = 0; i < paymentBtns.length; i++) {
+            const ele = paymentBtns[i];
+            if (ele.classList.contains("active")){
+                ele.classList.remove("active");
+            }
+        }
+        e.target.classList.add("active");
+    })
+}
+let randomNums = [];
+    for (let i = 0; i < 5; i++) {
+        const element = 5;
+        let randomNumber = Math.floor(Math.random() * 10);
+        randomNums[randomNums.length] = randomNumber;      
+        var newArr = randomNums.join("");
+    }
+let btnCheck = document.querySelector(".button-check a")
+
+btnCheck.addEventListener("click", () =>{
+    var receipt = document.querySelector(".receipt"); 
+    var firstINP = document.querySelector(".first-input"); 
+    var lastINP = document.querySelector(".last-input"); 
+    var addressINP = document.querySelector(".address-input"); 
+    var emailINP = document.querySelector(".email-input"); 
+
+    var fullname = document.querySelector(".receipt .full-name");
+    if (firstINP.value == "" || firstINP.value == undefined || firstINP.value == null && lastINP.value == "" || lastINP.value == undefined || lastINP.value == null ){
+        fullname.innerHTML = `Unknown`
+    } else{
+        fullname.innerHTML = `${firstINP.value} ${lastINP.value}`;
+    }
+
+    var address = document.querySelector(".receipt .address");
+    if (addressINP.value == "" || addressINP.value == undefined || addressINP.value == null){
+        address.innerText = `Unknown`;
+    } else{
+        address.innerText = `${addressINP.value}`;
+    }
+    var email = document.querySelector(".receipt .email");
+    if (emailINP.value == "" || emailINP.value == undefined || emailINP.value == null){
+        email.innerText = `Unknown`;
+    } else{
+        email.innerText = `${emailINP.value}`;
+    }
+
+    var paymentTypeOUT = document.querySelector(".receipt .payment-type");
+    if (paymentType == undefined){
+        paymentType = "cash";
+    }
+    paymentTypeOUT.innerText = `${paymentType}`;
+
+    var receiptNum = document.querySelector(".receipt .receipt-num");
+    receiptNum.innerText = `${newArr}`
+
+    var totalOut = document.querySelector(".receipt .total-price");
+    totalOut.innerText = `${totalPrice}.00 EGP`;
+    receipt.style.display = "block";
+    document.querySelector(".data-check").style.display = "none";
+    document.querySelector(".checkout").style.display = "none";
+    localStorage.clear();
+})
