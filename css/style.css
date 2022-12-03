@@ -351,8 +351,9 @@ a{
     border-radius: 0 10px 10px 0;
 }
 
-.receipt{
-
+.main-nav button:hover{
+    color: white !important;
+    background-color: var(--main-color) !important;
 }
 
 .receipt .receipt-content{
@@ -364,5 +365,34 @@ a{
     border: 1px solid rgba(119, 119, 119, 0.356);
 }
 
+.scroll-top{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+    box-shadow: 0 0 5px #00000052;
+    z-index: 10000;
+}
+
+.scroll-top.active{
+    opacity: 1;
+    bottom: 20px;
+    pointer-events: auto;
+}
+
+.scroll-top:hover{
+    color: white;
+}
 
 
