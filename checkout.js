@@ -4,7 +4,7 @@ let checkoutbtn = document.querySelector(".button-cont a")
 if (localStorage.getItem("products") == null){
     checkoutbtn.style.display = "none"
 } else{
-    emptyCart.style.display = "none"
+    emptyCart.remove();
     let productsStorage = localStorage.getItem("products");
     let productsArray = productsStorage.split(",")
     var productsContainer = document.querySelector(".products")
@@ -191,5 +191,7 @@ btnCheck.addEventListener("click", () =>{
     receipt.style.display = "block";
     document.querySelector(".data-check").style.display = "none";
     document.querySelector(".checkout").style.display = "none";
+    let productsCount = document.querySelector(".product-num");
+    productsCount.innerText = 0
     localStorage.clear();
 })

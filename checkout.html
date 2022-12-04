@@ -37,7 +37,10 @@
                             <li><a class="dropdown-item" href="#">USD</a></li>
                         </ul>
                     </div>
-                    <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-2x fa-cart-shopping d-flex align-items-center text-main"></i></a>
+                    <a href="#" class="d-flex justify-content-center align-items-center position-relative">
+                        <i class="fa-solid fa-2x fa-cart-shopping d-flex align-items-center text-main"></i>
+                        <span class="product-num">0</span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -53,7 +56,12 @@
         <div class="checkout">
             <div class="container">
                 <div class="products">
-                    <h1 class="text-center text-black-50 empty-cart">Shopping Cart is empty</h1>
+                    <div class="empty-cart d-flex justify-content-center align-items-center flex-column">
+                        <h1 class="text-center text-black-50 fw-bold">Shopping Cart is empty</h1>
+                        <img src="imgs/empty cart.png" class="mt-5 mb-3" alt="">
+                        <p class="text-black-50 text-center fs-5">Seems like you didnt add any products to the cart</p>
+                        <a class="btn btn-primary mt-2" href="products.html">Explore our products</a>
+                    </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center mt-5 button-cont">
                     <a class="btn btn-primary" role="button">Checkout</a>

@@ -1,6 +1,7 @@
 
 let buyBtn = document.querySelector(".buy-btn");
 let body = document.querySelector("body")
+let productsCount = document.querySelector(".product-num");
 
 
 buyBtn.addEventListener("click", (e) =>{
@@ -12,7 +13,7 @@ buyBtn.addEventListener("click", (e) =>{
         localStorage.setItem("products", productsArray)
     }
     alert()
-
+    productsCount.innerText = localStorage.getItem("products").split(",").length;
     function alert(){
         let alert = document.createElement("div")
         alert.classList.add("alert", "alert-success", "alert-dismissible", "fade", "show", "fixed-top")

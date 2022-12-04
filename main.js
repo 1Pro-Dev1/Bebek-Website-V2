@@ -7,3 +7,10 @@ window.addEventListener("scroll", () => {
         scrollTop.classList.remove("active")
     }
 })
+
+let productsNum = document.querySelector(".product-num");
+
+if (localStorage.getItem("products")){
+    let productsArray = localStorage.getItem("products").split(",")
+    productsNum.innerText = productsArray.length;
+}
