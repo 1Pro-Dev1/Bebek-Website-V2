@@ -53,9 +53,11 @@
             </div>
         </nav>
 
-        <div class="contact-page mt-3 mb-3">
-            <h1 class="text-center position-relative mb-5 heading color text-main">Contact us</h1>
-            <div class="container mt-5">
+        <div class="contact-page mb-3">
+            <div class="page-heading num3">
+                <h1>Contact us</h1>
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4 text-center mt-5">
                         <i class="fa-solid fa-phone fa-2x text-main mb-2"></i>
@@ -76,11 +78,31 @@
             </div>
         </div>
 
-        <div class="map mb-5">
+        <div class="map mb-2">
             <div class="container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131543.22280484097!2d30.887710680624004!3d29.959464368216672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145855e126df199d%3A0x24a6cf9d2fda5678!2s6th%20of%20October%20City%2C%20Giza%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sae!4v1669881998065!5m2!1sen!2sae" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+
+        <form action="" method="get">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 names">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+                    <div class="col-md-6 names">
+                        <label for="content">Content</label>
+                        <textarea name="content" id="content"></textarea>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
 
         <footer style="border-top: 4px solid var(--main-color);">
             <div class="container">             
@@ -112,10 +134,10 @@
                     </div>
                     <div class="col-lg-3">
                         <h2>Social Links</h2>
-                        <ul>
-                            <li class="fs-4 text-black-50"><a href="https://www.facebook.com">Facebook</a></li>
-                            <li class="fs-4 text-black-50"><a href="https://www.instagram.com">Instagram</a></li>
-                            <li class="fs-4 text-black-50"><a href="https://www.youtube.com">Youtube</a></li>
+                        <ul class="social-links">
+                            <li class="fs-4 text-black-50"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i>Facebook</a></li>
+                            <li class="fs-4 text-black-50"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                            <li class="fs-4 text-black-50"><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
                         </ul>
                     </div>
                 </div>
