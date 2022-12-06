@@ -419,11 +419,7 @@ footer i{
     color: white;
     border-radius: 50%;
     text-align: center;
-    margin-right: 5px;
-}
-
-footer .social-links li:not(:first-child){
-    margin-top: 5px;
+    margin-right: 15px;
 }
 
 .page-heading{
@@ -519,4 +515,8 @@ form button{
 }
 form{
     margin-bottom: 20px;
+}
+
+.social-links{
+    display: flex;
 }
