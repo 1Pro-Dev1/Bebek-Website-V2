@@ -1,16 +1,17 @@
 let scrollTop = document.querySelector(".scroll-top");
+scrollTop.setAttribute("title", "Scroll To Top");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100){
-        scrollTop.classList.add("active")
+        scrollTop.classList.add("active");
     } else{
-        scrollTop.classList.remove("active")
+        scrollTop.classList.remove("active");
     }
 })
 
 let productsNum = document.querySelector(".product-num");
 
 if (localStorage.getItem("products")){
-    let productsArray = localStorage.getItem("products").split(",")
+    let productsArray = localStorage.getItem("products").split(",");
     productsNum.innerText = productsArray.length;
 }
