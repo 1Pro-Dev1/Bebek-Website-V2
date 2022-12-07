@@ -503,7 +503,7 @@ footer i{
     height: calc(100% - 33px);
 }
 
-form button{
+.submit-btn{
     background-color: transparent;
     border-color: var(--main-color);
     margin-top: 5px;
@@ -513,7 +513,7 @@ form button{
     background-color: var(--main-color);
     border-style: solid;
 }
-form{
+.contact-form{
     margin-bottom: 20px;
 }
 
