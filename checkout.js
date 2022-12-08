@@ -68,7 +68,7 @@ if (localStorage.getItem("products") == null){
         cardbody.appendChild(cardprice)
     
         let pricesm = document.createElement("small")
-        pricesm.classList.add("text-main")
+        pricesm.classList.add("text-main" , "fw-bold")
         cardprice.appendChild(pricesm)
     
         productsContainer.appendChild(mainCard)
@@ -76,35 +76,43 @@ if (localStorage.getItem("products") == null){
         if (productName == "product1"){
             colImg.src = "imgs/product.webp"
             cardtitle.innerText = "Large Baby Bottle 240mm"
-            carddesc.innerText = `Keep your baby hydrated using Bebek's special 
-            bottle with soft flexible nipple for high-quality healthy breastfeeding.`
+            carddesc.innerText = `Keep your baby hydrated using Bebek's special bottle with soft flexible nipple for high-quality healthy breastfeeding.`
             pricesm.innerText = `Price: 600.00 EGP`
             totalPrice += 600;
     
         } else if(productName == "product2"){
             colImg.src = "imgs/product.webp"
             cardtitle.innerText = "Small Baby Bottle 180mm"
-            carddesc.innerText = `Premium BPA-free plastic is perfect for your
-            toddler's health since BPA is identified as harmful to babies' growth.`
+            carddesc.innerText = `Premium BPA-free plastic is perfect for your toddler's health since BPA is identified as harmful to babies' growth.`
             pricesm.innerText = `Price: 500.00 EGP`
             totalPrice += 500;
     
         } else if(productName == "product3"){
             colImg.src = "imgs/product2.webp"
             cardtitle.innerText = "Soft Silicone Feeding Nipple"
-            carddesc.innerText = `With anti-gas and anti-colic features, Bebek's
-            soft nipple will help your newborn to calm down and sleep well.`
+            carddesc.innerText = `With anti-gas and anti-colic features, Bebek's soft nipple will help your newborn to calm down and sleep well.`
             pricesm.innerText = `Price: 300.00 EGP`
             totalPrice += 300;
     
         } else if(productName == "product4"){
             colImg.src = "imgs/product3.webp"
             cardtitle.innerText = "Toddler Pacifier"
-            carddesc.innerText = `Bebek's pacifier is supported with a clip to prevent 
-            it from falling and getting dirty. It can also be easily cleaned or sterilized.`
+            carddesc.innerText = `Bebek's pacifier is supported with a clip to prevent it from falling and getting dirty. It can also be easily cleaned or sterilized.`
             pricesm.innerText = `Price: 300.00 EGP`
             totalPrice += 300;
     
+        } else if(productName == "bundel1"){
+            colImg.src = "imgs/bundle.png"
+            cardtitle.innerText = "Bebek® Large Bottle Bundle"
+            carddesc.innerText = `Healthy breastfeeding set that includes: a toddler pacifier, pacifier holder, pacifier case, and a large bottle (240mm) with soft flexible nipples.`
+            pricesm.innerText = `Price: 500.00 EGP`
+            totalPrice += 500;
+        } else if(productName == "bundel2"){
+            colImg.src = "imgs/bundle.png"
+            cardtitle.innerText = "Bebek® Small Bottle Bundle"
+            carddesc.innerText = `Healthy breastfeeding set that includes: a toddler pacifier, pacifier holder, pacifier case, and a large bottle (180mm) with soft flexible nipples.`
+            pricesm.innerText = `Price: 350.00 EGP`
+            totalPrice += 350;
         }
     }
 }
