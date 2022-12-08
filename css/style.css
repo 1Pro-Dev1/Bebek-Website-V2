@@ -574,10 +574,17 @@ footer i{
     background: #006bb777;
 }
 ::-webkit-scrollbar-thumb {
-    
     background: #1768a1;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #003c66;
+}
+
+.news .card{
+    box-shadow: 0 0 10px white;
+}
+
+.news .card img{
+    border-bottom: 2px solid var(--main-color);
 }
