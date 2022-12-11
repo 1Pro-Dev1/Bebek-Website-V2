@@ -1,5 +1,6 @@
-let emptyCart = document.querySelector(".empty-cart")
-let checkoutbtn = document.querySelector(".button-cont a")
+let emptyCart = document.querySelector(".empty-cart");
+let checkoutbtn = document.querySelector(".button-cont a");
+
 
 if (localStorage.getItem("products") == null){
     checkoutbtn.style.display = "none"
@@ -118,10 +119,14 @@ if (localStorage.getItem("products") == null){
 }
 
 checkoutbtn.addEventListener("click", () =>{
-    productsContainer.remove()
-    checkoutbtn.style.display = "none"
-    document.querySelector(".data-check").style.display = "block"
-})
+    productsContainer.remove();
+    checkoutbtn.style.display = "none";
+    document.querySelector(".data-check").style.display = "block";
+    let cartBtn = document.querySelector(".cart-btn");
+    cartBtn.onclick = () => {
+        location.reload()
+    }
+});
 
 // Payment choose //
 

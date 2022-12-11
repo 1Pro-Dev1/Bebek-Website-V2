@@ -35,7 +35,7 @@
                         <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
                         <button class="btn bg-main text-white" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
-                    <div class="dropdown text-main">
+                    <!-- <div class="dropdown text-main">
                         <button class="btn dropdown-toggle fw-bold fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             EGP
                         </button>
@@ -43,8 +43,8 @@
                             <li><a class="dropdown-item" href="#">EGP</a></li>
                             <li><a class="dropdown-item" href="#">USD</a></li>
                         </ul>
-                    </div>
-                    <a href="checkout.html" class="d-flex justify-content-center align-items-center position-relative">
+                    </div> -->
+                    <a href="checkout.html" class="d-flex justify-content-center align-items-center position-relative cart-out ms-2">
                         <i class="fa-solid fa-2x fa-cart-shopping d-flex align-items-center text-main"></i>
                         <span class="product-num">0</span>
                     </a>
@@ -95,18 +95,35 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-        <div class="feutures">
+        <div class="feutures no2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="imgs/feature1.jpg" class="img-fluid rounded" alt="">
+                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start"  data-aos="fade-right" data-aos-duration="1000">
+                        <i class="fa-solid fa-truck-fast fa-3x me-3 text-main"></i>
+                        <div class="text d-flex">
+                            <h4>Fast Shipping</h4>
+                            <p class="text-black-50 m-0">of all products to your doorstep</p>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-3 mt-md-3" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="imgs/feature2.jpg" class="img-fluid rounded" alt="">
+                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start mt-3 mt-md-3"  data-aos="fade-left" data-aos-duration="1000">
+                        <i class="fa-solid fa-leaf fa-3x me-3 text-main"></i>
+                        <div class="text d-flex">
+                            <h4>BPA Free</h4>
+                            <p class="text-black-50 m-0">Plastic to ensure safety</p>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-3 mt-md-3 ms-auto me-auto" data-aos="fade-left" data-aos-duration="1000">
-                        <img src="imgs/feature3.jpg" class="img-fluid rounded" alt="">
+                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start mt-3 mt-md-3"  data-aos="fade-right" data-aos-duration="1000">
+                        <i class="fa-regular fa-face-smile fa-3x me-3 text-main"></i>
+                        <div class="text d-flex">
+                            <h4>Customer support</h4>
+                            <p class="text-black-50 m-0">available at your service</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start mt-3 mt-md-3"  data-aos="fade-left" data-aos-duration="1000">
+                        <i class="fa-solid fa-cart-shopping fa-3x me-3 text-main"></i>
+                        <div class="text d-flex">
+                            <h4>100% secure checkout</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,15 +181,17 @@
                                             <div class="img-con">
                                                 <img src="imgs/product.webp" class="img-fluid" alt=""></img>
                                             </div>
-                                            <div class="products-details">
+                                            <div class="products-details d-flex flex-column" style="height: 128px; justify-content: space-between;">
                                                 <h5 class="text-center fw-semibold text-main mt-3">Large Baby Bottle 240mm</h5>
-                                                <h5 class="fw-bold text-center fs-5v text-black">600.00 EGP</h5>
-                                                <div class="rating text-center d-flex justify-content-center mb-2">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
+                                                <div>
+                                                    <h5 class="fw-bold text-center fs-5v text-black">600.00 EGP</h5>
+                                                    <div class="rating text-center d-flex justify-content-center mb-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,15 +205,17 @@
                                             <div class="img-con">
                                                 <img src="imgs/product.webp" class="img-fluid" alt="">
                                             </div>
-                                            <div class="products-details">
+                                            <div class="products-details d-flex flex-column" style="height: 128px; justify-content: space-between;">
                                                 <h5 class="text-center fw-semibold text-main mt-3">Small Baby Bottle 180mm</h5>
-                                                <h5 class="fw-bold text-center fs-5v text-black">500.00 EGP</h5>
-                                                <div class="rating text-center d-flex justify-content-center mb-2">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
+                                                <div>
+                                                    <h5 class="fw-bold text-center fs-5v text-black">500.00 EGP</h5>
+                                                    <div class="rating text-center d-flex justify-content-center mb-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -208,35 +229,41 @@
                                             <div class="img-con">
                                                 <img src="imgs/product2.webp" class="img-fluid" alt="">
                                             </div>
-                                            <div class="products-details">
+                                            <div class="products-details d-flex flex-column" style="height: 128px; justify-content: space-between;">
                                                 <h5 class="text-center fw-semibold text-main mt-3">Soft Silicone Feeding Nipple</h5>
-                                                <h5 class="fw-bold text-center fs-5v text-black">300.00 EGP</h5>
-                                                <div class="rating text-center d-flex justify-content-center mb-2">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
+                                                <div>
+                                                    <h5 class="fw-bold text-center fs-5v text-black">300.00 EGP</h5>
+                                                    <div class="rating text-center d-flex justify-content-center mb-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 mt-5 rounded m-auto"  data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-lg-3 col-md-4 col-sm-6 mt-5 rounded"  data-aos="fade-up" data-aos-duration="1000">
                                 <div>
                                     <a href="products/product4.html">
                                         <div class="pb-2">
-                                            <img src="imgs/product3.webp" class="img-fluid" alt="">
-                                            <div class="products-details">
+                                            <div class="img-con">
+                                                <img src="imgs/product3.webp" class="img-fluid" alt=""></img>
+                                            </div>
+                                            <div class="products-details d-flex flex-column" style="height: 128px; justify-content: space-between;">
                                                 <h5 class="text-center fw-semibold text-main mt-3">Toddler Pacifier</h5>
-                                                <h5 class="fw-bold text-center fs-5v text-black">300.00 EGP</h5>
-                                                <div class="rating text-center d-flex justify-content-center mb-2">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
+                                                <div class="flex-end">
+                                                    <h5 class="fw-bold text-center fs-5v text-black">300.00 EGP</h5>
+                                                    <div class="rating text-center d-flex justify-content-center mb-2">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -300,40 +327,22 @@
         </div>
 
         <div class="spacer layer2"></div>
-
-        <div class="feutures no2">
+        <div class="feutures">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start"  data-aos="fade-right" data-aos-duration="1000">
-                        <i class="fa-solid fa-truck-fast fa-3x me-3 text-main"></i>
-                        <div class="text d-flex">
-                            <h4>Fast Shipping</h4>
-                            <p class="text-black-50 m-0">of all products to your doorstep</p>
-                        </div>
+                    <div class="col-lg-4 col-md-6 mt-3 mt-md-3" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="imgs/feature1.jpg" class="img-fluid rounded" alt="">
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start mt-3 mt-md-3"  data-aos="fade-left" data-aos-duration="1000">
-                        <i class="fa-solid fa-leaf fa-3x me-3 text-main"></i>
-                        <div class="text d-flex">
-                            <h4>BPA Free</h4>
-                            <p class="text-black-50 m-0">Plastic to ensure safety</p>
-                        </div>
+                    <div class="col-lg-4 col-md-6 mt-3 mt-md-3" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="imgs/feature2.jpg" class="img-fluid rounded" alt="">
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start mt-3 mt-md-3"  data-aos="fade-right" data-aos-duration="1000">
-                        <i class="fa-regular fa-face-smile fa-3x me-3 text-main"></i>
-                        <div class="text d-flex">
-                            <h4>Customer support</h4>
-                            <p class="text-black-50 m-0">available at your service</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mt-3 d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start mt-3 mt-md-3"  data-aos="fade-left" data-aos-duration="1000">
-                        <i class="fa-solid fa-cart-shopping fa-3x me-3 text-main"></i>
-                        <div class="text d-flex">
-                            <h4>100% secure checkout</h4>
-                        </div>
+                    <div class="col-lg-4 col-md-6 mt-3 mt-md-3 ms-auto me-auto" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="imgs/feature3.jpg" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="spacer layer3"></div>
 
         <div class="news bg-main pt-5 pb-5">
@@ -352,7 +361,7 @@
                                         ut possimus maxime officia nihil sit totam assumenda ab at perferendis 
                                         ducimus dolorem suscipit...
                                     </p>
-                                    <a class="btn btn-primary mt-2 mb-2 pt-1 pb-1 ps-2 pe-2 me-auto ms-auto fw-semibold">Read more</a>
+                                    <a class="btn btn-primary mt-2 mb-2 pt-1 pb-1 ps-2 pe-2 me-auto ms-auto fw-semibold" href="posts/post1.html">Read more</a>
                                     <div class="card-footer bg-white">
                                         <span class="text-main me-3"><i class="fa-regular fa-calendar-days me-1"></i>8/12/2022</span>
                                         <span class="text-main"><i class="fa-solid fa-eye me-1"></i>22</span>
@@ -371,7 +380,7 @@
                                         ut possimus maxime officia nihil sit totam assumenda ab at perferendis 
                                         ducimus dolorem suscipit...
                                     </p>
-                                    <a class="btn btn-primary mt-2 mb-2 pt-1 pb-1 ps-2 pe-2 me-auto ms-auto fw-semibold">Read more</a>
+                                    <a class="btn btn-primary mt-2 mb-2 pt-1 pb-1 ps-2 pe-2 me-auto ms-auto fw-semibold" href="posts/post2.html">Read more</a>
                                     <div class="card-footer bg-white">
                                         <span class="text-main me-3"><i class="fa-regular fa-calendar-days me-1"></i>23/7/2022</span>
                                         <span class="text-main"><i class="fa-solid fa-eye me-1"></i>38</span>
@@ -390,7 +399,7 @@
                                         ut possimus maxime officia nihil sit totam assumenda ab at perferendis 
                                         ducimus dolorem suscipit...
                                     </p>
-                                    <a class="btn btn-primary mt-2 mb-2 pt-1 pb-1 ps-2 pe-2 me-auto ms-auto fw-semibold">Read more</a>
+                                    <a class="btn btn-primary mt-2 mb-2 pt-1 pb-1 ps-2 pe-2 me-auto ms-auto fw-semibold" href="posts/post3.html">Read more</a>
                                     <div class="card-footer bg-white">
                                         <span class="text-main me-3"><i class="fa-regular fa-calendar-days me-1"></i>2/10/2022</span>
                                         <span class="text-main"><i class="fa-solid fa-eye me-1"></i>54</span>
@@ -429,10 +438,10 @@
                     <div class="col-lg-2">
                         <h2>Links</h2>
                         <ul>
-                            <li class="fs-4 text-black-50">Home</li>
-                            <li class="fs-4 text-black-50">Products</li>
-                            <li class="fs-4 text-black-50">About us</li>
-                            <li class="fs-4 text-black-50">Contact us</li>
+                            <li class="fs-4 text-black-50"><a href="index.html">Home</a></li>
+                            <li class="fs-4 text-black-50"><a href="about.html">About us</a></li>
+                            <li class="fs-4 text-black-50"><a href="products.html">Products</a></li>
+                            <li class="fs-4 text-black-50"><a href="contact.html">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">

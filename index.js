@@ -3,20 +3,25 @@ let loadingCircle = document.querySelector(".pre-loader .loading")
 let bebekLogo = document.querySelector(".pre-loader .bebek-logo")
 let loadingHeading = document.querySelector(".pre-loader h3")
 
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        loadingCircle.classList.add("hide")
+if (sessionStorage.getItem("opend")) {
+    loadingScreen.remove();
+} else {
+    window.addEventListener("load", () => {
         setTimeout(() => {
-            bebekLogo.classList.add("show");
+            loadingCircle.classList.add("hide")
             setTimeout(() => {
-                loadingHeading.classList.add("show")
+                bebekLogo.classList.add("show");
                 setTimeout(() => {
-                    loadingScreen.classList.add("hide");
+                    loadingHeading.classList.add("show")
                     setTimeout(() => {
-                        loadingScreen.remove();
-                    },500)
-                }, 3500)
-            }, 2000)
-        },500)
-    }, 2000)
-})
+                        loadingScreen.classList.add("hide");
+                        setTimeout(() => {
+                            loadingScreen.remove();
+                        },500)
+                    }, 3500)
+                }, 2000)
+            },500)
+        }, 2000)
+    })
+    sessionStorage.setItem("opend", "yes")
+}
